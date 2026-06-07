@@ -42,6 +42,9 @@ This is the base image.
 * We then build our own image on top of this image.
 * Think of it as the operating system + Node.js already installed.
 
+  <img width="1821" height="800" alt="image" src="https://github.com/user-attachments/assets/ec8a7dc4-921f-445c-be04-0421314e3107" />
+
+
 ---
 
 ## Working Directory
