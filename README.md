@@ -562,6 +562,7 @@ A common misconception is:
 ```text
 localhost = my machine
 ```
+![alt text](image-1.png)
 
 Inside Docker:
 
@@ -629,6 +630,7 @@ xxxxxxxxxx     my_custom_network
 ```
 
 ---
+![alt text](image.png)
 
 # Building the Application Image
 
@@ -1142,6 +1144,8 @@ Server B
 ```
 
 Useful for distributed applications.
+
+
 
 ---
 
