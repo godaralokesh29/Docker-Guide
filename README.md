@@ -546,3 +546,6 @@ docker ps    → Shows Running Containers
 docker exec  → Enter Container
 docker push  → Upload Image to Docker Hub
 ```
+
+
+to optimise the build time we need to cache the npm layer also where the package are installed and when only the code file changes the build time should go in that only not also in installing the same packages which were already installed so we cache them 
