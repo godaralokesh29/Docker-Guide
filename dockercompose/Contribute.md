@@ -1,25 +1,24 @@
-##Manual installation
--intall nodejs locally
--clone the repo
--npm install
--start the database
-  - docker run -r POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
--change the .env file to the db url 
--npx prisma migrate dev
--npx prisma generate 
--npm run build
--npm run start
+## Manual installation
+ - Install nodejs locally ()
+ - Clone the repo
+ - Install dependencies (npm install)
+ - Start the DB locally
+    - docker run -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
+    - Go to neon.tech and get yourself a new DB
+ - Change the .env file and update your DB credentials
+ - npx prisma migrate
+ - npx prisma generate
+ - npm run build
+ - npm run start
 
+ ## Docker installation
+ - Install docker
+ - Create a network - docker network create user_project
+ - Start postgres
+    -  docker run --network user_project --name postgres -e POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
+ - Build the image - `docker build --network=host -t user-project .`
+ - Start the image - `docker run -e DATABASE_URL=postgresql://postgres:mysecretpassword@postgres:5432/postgres --network user_project -p 3000:3000 user-project`
 
-
-##Docker Installation
--install docker 
--start postgress
-  -  docker run -r POSTGRES_PASSWORD=mysecretpassword -d -p 5432:5432 postgres
--build the image - `docker build -t user_project`
--start the image - `docker run -p3000:3000 user_project`
-  
-
-##Docker Compose
--install docker 
--run `docker compose up`
+ ## Docker Compose installation steps
+ - Install docker, docker-compose
+ - Run `docker-compose up`
