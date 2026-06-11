@@ -74,7 +74,9 @@ So our application source code will live inside:
 ---
 
 ## Copying Files
+![alt text](image-2.png)
 
+![alt text](image-3.png)
 ```dockerfile
 COPY . .
 ```
